@@ -1,1 +1,4 @@
+_site/
 .env
+node_modules/
+build/
