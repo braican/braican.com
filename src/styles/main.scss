@@ -1,7 +1,8 @@
-@font-face {
-  font-family: Cotham;
-  src: url("/fonts/CothamSans.woff2") format("woff2"),
-    url("/fonts/CothamSans.woff") format("woff");
-}
-
-@import "./base";
+@import './variables';
+@import 'mixins/mixins';
+@import './fonts';
+@import './reset';
+@import './base';
+@import './type';
+@import './layout';
+@import './footer';

@@ -1,7 +1,9 @@
 const MarkdownIt = require('markdown-it');
 const CleanCSS = require('clean-css');
 
-const md = new MarkdownIt();
+const md = new MarkdownIt({
+  html: true,
+});
 
 module.exports = function (eleventyConfig) {
   // A useful way to reference the context we are runing eleventy in

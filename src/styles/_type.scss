@@ -1,0 +1,13 @@
+a {
+  @include transition(box-shadow color);
+  display: inline-block;
+  color: $c--white;
+  text-decoration: none;
+  line-height: 1.2;
+  box-shadow: inset 0 -0.05em 0 rgba($c--white, 0.8);
+
+  &:hover {
+    color: $c--yellow-dark;
+    box-shadow: inset 0 -1.2em 0 rgba($c--white, 0.8);
+  }
+}

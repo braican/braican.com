@@ -1,3 +1,8 @@
 {
-  "extends": "@upstatement"
+  "extends": "@upstatement",
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true
+  }
 }

@@ -1,0 +1,52 @@
+// Colors
+// -----------
+
+$c--white: #fff;
+$c--yellow: #b95a00;
+$c--yellow-dark: #894300;
+
+$c--bg: $c--yellow;
+$c--accent: $c--yellow-dark;
+
+// Font family
+// -----------
+
+$ff--base: 'Cotham', 'Roboto', Roboto, Helvetica, serif;
+
+// Font size
+// -----------
+
+$fz--mobile: 18px;
+$fz--desktop: 24px;
+
+$fz--sm: 0.75rem;
+$fz--lg: 1.6rem;
+$fz--huge: 4rem;
+
+// Line height
+// -----------
+
+$lh--base: 1.4;
+$lh--header: 1.1;
+
+// Layouts
+// -----------
+
+$max-container: 800px;
+$offset-container: 66.66666%;
+$offset-margin: 100% - $offset-container;
+
+// Spacing
+// -----------
+
+$spacing--lg: 10vw;
+
+// Breakpoints
+// -----------
+
+$bp--small: 660px;
+
+// Timing
+// -----------
+
+$timing-butter: cubic-bezier(0.215, 0.61, 0.355, 1);

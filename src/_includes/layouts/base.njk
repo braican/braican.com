@@ -26,20 +26,30 @@ meta_description: Nick Braica is a design-focused web developer who builds impac
   <style>
     {{ css | cssmin | safe }}
 
-    {% if project.env === 'development' %}
+    {% if site.env === 'development' %}
     /*# sourceMappingURL=/styles/main.css.map */
     {% endif %}
   </style>
 </head>
 <body>
 
-<div>
-  {{ main | markdown_it | safe }}
+<div class="site-padding">
+  <main role="main">
+    <h1 class="lede">{{ lede }}</h1>
+    <div class="offset content">
+      {{ main | markdown_it | safe }}
+    </div>
+  </main>
+
+  <aside class="promo content">
+    {{ promo | markdown_it | safe }}
+  </aside>
 </div>
 
-<div>
-  {{ promo | markdown_it | safe }}
-</div>
+<footer class="footer site-padding">
+  <p>&copy; {{ site.currentYear }} Nick Braica</p>
+  <p class="colophon">Cotham typeface provided by <a href="https://open-foundry.com/fonts/cotham_regular" target="_blank" rel="noopener noreferrer">open-foundry.com</a></p>
+</footer>
 
 </body>
 </html>
