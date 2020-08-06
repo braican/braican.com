@@ -13,7 +13,7 @@
     "url": "https://github.com/braican/braican.com/issues"
   },
   "scripts": {
-    "build": "eleventy",
+    "build": "npm run scss && eleventy",
     "start": "ELEVENTY_ENV=development npm-run-all scss --parallel watch:*",
     "watch:eleventy": "eleventy --serve",
     "watch:scss": "npm run scss -- --watch",
