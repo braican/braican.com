@@ -4,18 +4,10 @@
 }
 
 .lede {
+  @include block-text();
   font-size: $fz--huge;
   font-size: clamp(2rem, 10vw, $fz--huge);
   line-height: $lh--header;
-
-  $shadow: ();
-  @for $i from 1 to 16 {
-    $px: $i + px;
-    $newShadow: $px $px $c--accent;
-    $shadow: append(#{$newShadow}, $shadow, comma);
-  }
-
-  text-shadow: $shadow;
 
   @include mq($bp--small) {
     width: $offset-container;
