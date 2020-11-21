@@ -17,7 +17,7 @@
     "start": "ELEVENTY_ENV=development npm-run-all scss --parallel watch:*",
     "watch:eleventy": "eleventy --serve",
     "watch:scss": "npm run scss -- --watch",
-    "scss": "sass --style=compressed src/styles/main.scss src/_includes/build/main.css"
+    "scss": "sass --style=compressed src/styles/main.scss build/main.css"
   },
   "dependencies": {},
   "devDependencies": {

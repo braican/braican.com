@@ -1,5 +1,6 @@
 const MarkdownIt = require('markdown-it');
 const CleanCSS = require('clean-css');
+const util = require('util');
 
 const md = new MarkdownIt({
   html: true,
@@ -19,16 +20,17 @@ module.exports = function(eleventyConfig) {
     }).minify(code).styles;
   });
 
+  eleventyConfig.addFilter('console', function(value) {
+    return util.inspect(value);
+  });
+
   // pass some assets right through
   eleventyConfig.addPassthroughCopy('./src/fonts');
+  eleventyConfig.addPassthroughCopy('./build');
 
-  // For sourcemaps, only in development.
-  if (env === 'development') {
-    eleventyConfig.addPassthroughCopy('./src/styles');
-    eleventyConfig.addPassthroughCopy({
-      './src/_includes/build/main.css.map': 'styles/main.css.map',
-    });
-  }
+  // Add css watch target
+  eleventyConfig.addWatchTarget('./build/main.css');
+  eleventyConfig.setUseGitIgnore(false);
 
   return {
     dir: {

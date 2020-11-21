@@ -27,7 +27,7 @@ meta_description: Nick Braica is a design-focused web developer who builds impac
     {{ css | cssmin | safe }}
 
     {% if site.env === 'development' %}
-    /*# sourceMappingURL=/styles/main.css.map */
+    /*# sourceMappingURL=build/main.css.map */
     {% endif %}
   </style>
 </head>
@@ -39,6 +39,29 @@ meta_description: Nick Braica is a design-focused web developer who builds impac
     <div class="offset content">
       {{ content | markdown_it | safe }}
     </div>
+
+
+    <div>
+      <h2>Projects</h2>
+
+      <ul>
+        {% for project in collections.projects %}
+          <li>{{ project.data.title }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+    <div>
+      <h2>Posts</h2>
+
+      <ul>
+        {% for post in collections.posts %}
+          <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </main>
 
   <aside class="promo content">
