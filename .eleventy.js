@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
   // pass some assets right through
   eleventyConfig.addPassthroughCopy('./src/fonts');
   eleventyConfig.addPassthroughCopy('./build');
+  eleventyConfig.addPassthroughCopy('./admin');
 
   // Add css watch target
   eleventyConfig.addWatchTarget('./build/main.css');
