@@ -1,4 +1,8 @@
+# Where the site is built to.
 _site/
+public/
+
+# Other things.
 .env
 node_modules/
 build/
