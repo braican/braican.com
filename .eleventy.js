@@ -5,15 +5,15 @@ const md = new MarkdownIt({
   html: true,
 });
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   // A useful way to reference the context we are runing eleventy in
   const env = process.env.ELEVENTY_ENV;
 
-  eleventyConfig.addFilter('markdown_it', function (value) {
+  eleventyConfig.addFilter('markdown_it', function(value) {
     return md.render(value);
   });
 
-  eleventyConfig.addFilter('cssmin', function (code) {
+  eleventyConfig.addFilter('cssmin', function(code) {
     return new CleanCSS({
       sourceMap: true,
     }).minify(code).styles;

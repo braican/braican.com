@@ -1,8 +1,8 @@
-@import './variables';
-@import 'mixins/mixins';
-@import './fonts';
-@import './reset';
-@import './base';
-@import './type';
-@import './layout';
-@import './footer';
+// Abstracts
+// -----------
+@import 'variables';
+
+// Base
+// -----------
+
+@import 'base/_index';

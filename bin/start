@@ -1,8 +1,0 @@
-#!/bin/bash
-
-set -e
-
-echo "Starting static dev server and front end ..."
-echo
-yarn start
-echo
