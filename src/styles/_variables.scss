@@ -4,6 +4,7 @@
 $c--white: #fff;
 $c--yellow: #c75000;
 $c--yellow-dark: #a34200;
+$c--gray: #313534;
 
 $c--bg: $c--yellow;
 $c--accent: $c--yellow-dark;
@@ -11,7 +12,8 @@ $c--accent: $c--yellow-dark;
 // Font family
 // -----------
 
-$ff--base: 'Cotham', 'Roboto', Roboto, Helvetica, serif;
+$ff--base: 'Work Sans', 'Roboto', Roboto, Helvetica, serif;
+$ff-headline: 'Young Serif', 'Garamond', 'Baskerville', Georgia, sans-serif;
 
 // Font size
 // -----------
@@ -35,11 +37,13 @@ $lh--header: 1.1;
 $max-container: 800px;
 $offset-container: 66.66666%;
 $offset-margin: 100% - $offset-container;
+$section-padding: 1rem;
 
 // Spacing
 // -----------
 
 $spacing--lg: 10vw;
+$spacing: 1rem;
 
 // Breakpoints
 // -----------

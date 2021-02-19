@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/home.njk
 lede: Let's build something.
 promo: Let's work together on your next project.
 ---

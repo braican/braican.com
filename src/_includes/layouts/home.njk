@@ -1,0 +1,46 @@
+---
+meta_title: Nick Braica; web developer
+meta_description: Nick Braica is a design-focused web developer who builds impactful online experiences.
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block main %}
+
+  <section class="intro">
+    <div class="intro__main section-padding">
+      <h1 class="lede">{{ lede }}</h1>
+      <div class="">
+        {{ content | markdown_it | safe }}
+      </div>
+    </div>
+
+    <div class="intro__asset"></div>
+  </section>
+
+
+  <section>
+    <h2>Projects</h2>
+
+    <ul>
+      {% for project in collections.projects %}
+        <li>{{ project.data.title }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+
+  <section>
+    <h2>Posts</h2>
+
+    <ul>
+      {% for post in collections.posts %}
+        <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <aside class="promo">
+    {{ promo }}
+  </aside>
+{% endblock %}

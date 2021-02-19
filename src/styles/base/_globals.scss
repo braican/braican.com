@@ -1,0 +1,14 @@
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-width: 100%;
+}

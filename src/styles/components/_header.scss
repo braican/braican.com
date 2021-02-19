@@ -1,0 +1,19 @@
+.site-masthead {
+  position: fixed;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+}
+
+.masthead__logo {
+  @include transition(transform, 100ms);
+  width: 60px;
+  display: block;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}

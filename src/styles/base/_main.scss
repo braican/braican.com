@@ -1,0 +1,23 @@
+.lede {
+  font-family: $ff-headline;
+  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 6rem);
+}
+
+.intro {
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-end;
+}
+
+.intro__main {
+  width: 60%;
+  padding-right: $spacing * 2;
+}
+
+.intro__asset {
+  flex: 1;
+  background-color: lighten($c--gray, 10%);
+  height: 90vh;
+  align-self: flex-start;
+}
