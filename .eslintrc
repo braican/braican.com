@@ -1,8 +1,7 @@
 {
+  "root": true,
   "extends": "@upstatement",
   "env": {
-    "browser": true,
-    "amd": true,
-    "node": true
+    "browser": true
   }
 }

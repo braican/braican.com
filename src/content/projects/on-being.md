@@ -1,5 +1,0 @@
----
-title: On Being
----
-
-Hello
