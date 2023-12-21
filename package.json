@@ -13,7 +13,8 @@
     "url": "https://github.com/braican/braican.com/issues"
   },
   "scripts": {
-    "dev": "eleventy --serve"
+    "dev": "eleventy --serve",
+    "build": "eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
