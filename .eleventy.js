@@ -1,20 +1,14 @@
 const MarkdownIt = require('markdown-it');
 
-const md = new MarkdownIt({
-  html: true,
-});
+const md = new MarkdownIt();
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addFilter('markdown_it', function(value) {
-    return md.render(value);
-  });
-
-  // pass some assets right through
-  eleventyConfig.addPassthroughCopy('./admin');
+  eleventyConfig.addFilter('md', (value) => md.render(value));
 
   return {
     dir: {
       input: 'src',
+      data: '../_data'
     },
   };
 };
