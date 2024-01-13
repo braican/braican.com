@@ -1,3 +1,18 @@
-body {
+html {
   font-family: sans-serif;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1 {
+  font-weight: var(--heading-weight);
+  /* font-variation-settings: 'ital' 0;
+  font-variation-settings: 'wght' 700; */
 }
