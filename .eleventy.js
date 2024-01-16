@@ -6,6 +6,7 @@ const md = new MarkdownIt();
 module.exports = function (eleventyConfig) {
   // Filters.
   eleventyConfig.addFilter('md', value => md.render(value));
+  eleventyConfig.addFilter('debug', content => `<pre>${JSON.stringify(content)}</pre>`);
 
   // Static asset compilation (css and js).
   eleventyConfig.addWatchTarget('./src/static/**/*');
@@ -23,7 +24,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: 'src',
-      data: '../_data',
+      data: '../content',
     },
   };
 };
