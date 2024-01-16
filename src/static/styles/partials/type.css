@@ -13,6 +13,4 @@ button, input, label {
 
 h1 {
   font-weight: var(--heading-weight);
-  /* font-variation-settings: 'ital' 0;
-  font-variation-settings: 'wght' 700; */
 }
