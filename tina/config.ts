@@ -10,9 +10,7 @@ const branch =
 export default defineConfig({
   branch,
 
-  // Get this from tina.io
   clientId: process.env.PUBLIC_TINA_CLIENT_ID,
-  // Get this from tina.io
   token: process.env.TINA_TOKEN,
 
   build: {
