@@ -10,8 +10,8 @@ const branch =
 export default defineConfig({
   branch,
 
-  clientId: process.env.PUBLIC_TINA_CLIENT_ID,
-  token: process.env.TINA_TOKEN,
+  clientId: process.env.TINA_CLIENT_ID,
+  token: process.env.TINA_CONTENT_TOKEN,
 
   build: {
     outputFolder: "admin",
@@ -22,6 +22,14 @@ export default defineConfig({
       mediaRoot: "",
       publicFolder: "_site/static/img",
     },
+  },
+  search: {
+    tina: {
+      indexerToken: process.env.TINA_SEARCH_TOKEN,
+      stopwordLanguages: ['eng'],
+    },
+    indexBatchSize: 100,
+    maxSearchIndexFieldLength: 100,
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
@@ -65,6 +73,27 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: 'projects',
+        label: 'Projects',
+        path: 'content/projects',
+        format: 'json',
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Title',
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: 'rich-text',
+            name: 'description',
+            label: 'Description',
+            isBody: true,
+          }
+        ]
+      }
     ],
   },
 });
