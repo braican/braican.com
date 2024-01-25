@@ -30,10 +30,10 @@
 .footer {
   @include font-load();
   padding-left: 1em;
-  padding-top: 1em;
-  width: 100vh;
-  transform-origin: 0 0;
-  transform: translateY(100%) rotate(-90deg);
+  padding-top: 2em;
+  // width: 100vh;
+  // transform-origin: 0 0;
+  // transform: translateY(100%) rotate(-90deg);
 
   @include mq($bp--mobile, max) {
     display: none;

@@ -16,6 +16,10 @@
   }
 }
 
+.footer {
+  margin-top: spacing(10);
+}
+
 .headline {
   @include mq($bp--desktop) {
     width: 32%;

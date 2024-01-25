@@ -10,8 +10,6 @@ const Sidebar = () => (
     <div className={styles.logo}>
       <Logo />
     </div>
-
-    <Footer className={`${styles.footer} site-footer`} />
   </div>
 );
 
