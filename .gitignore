@@ -6,4 +6,6 @@ node_modules/
 
 # Other
 _src
+
+node_modules
 .env
