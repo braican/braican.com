@@ -6,10 +6,10 @@
   display: inline-block;
 }
 
+.social {
+  margin-top: 10px;
+}
 .social li {
   display: inline-block;
-
-  + li {
-    margin-left: 1em;
-  }
+  margin-right: 1em;
 }

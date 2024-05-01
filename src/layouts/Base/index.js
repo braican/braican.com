@@ -25,7 +25,9 @@ const BaseLayout = ({ children, headline }) => (
 
       <div className={styles.body}>{children}</div>
 
-      <Footer className={styles.mobileFooter} />
+      {/* <Footer className={styles.mobileFooter} /> */}
+
+      <Footer className={`${styles.footer} site-footer`} />
     </main>
   </div>
 );

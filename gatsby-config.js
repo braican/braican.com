@@ -4,7 +4,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `Nick Braica builds things`,
+    title: `Nick Braica builds digital products.`,
     description: `Nick Braica is a design-focused web developer who builds exceptional online experiences.`,
     author: `Nick Braica <nick.braica@gmail.com>`,
   },
@@ -51,9 +51,9 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-20596099-3',
+        trackingIds: ['G-1TSKKRB9PE'],
       },
     },
   ],
