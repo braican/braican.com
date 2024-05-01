@@ -4,7 +4,7 @@ This is the public repository of [braican.com](http://braican.com), [Nick Braica
 
 ## Setup and development
 
-To set up a local environment to make changes to the front end of the site, you should run the following:
+To set up a local environment complete with a WordPress instance and the Gatsby frontend, you should run the following:
 
 ```
 # Make sure you're using the right node version.
