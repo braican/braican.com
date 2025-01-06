@@ -1,7 +1,17 @@
 import esbuild from 'esbuild';
+import markdownIt from 'markdown-it';
 
 export default async function (eleventyConfig) {
   const env = process.env.ENVIRONMENT;
+  const md = markdownIt({
+    html: false,
+    breaks: true,
+    linkify: true,
+  });
+
+  eleventyConfig.addNunjucksFilter('md', markdownString => {
+    return md.render(markdownString);
+  });
 
   eleventyConfig.addTemplateFormats('css');
   eleventyConfig.addExtension('css', {

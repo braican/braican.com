@@ -1,17 +1,17 @@
-media: _data/media
+media: src/_data/media
 content:
   - name: homepage
     label: Homepage
     type: file
     format: json
-    path: _data/content/home.json
+    path: src/_data/posts/home.json
     fields:
       - name: intro
         label: Intro
         type: rich-text
   - name: projects
     label: Projects
-    path: _data/content/projects
+    path: src/_data/content/projects
     type: collection
     fields:
       - name: title
