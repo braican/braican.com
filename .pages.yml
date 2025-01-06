@@ -11,7 +11,7 @@ content:
         type: rich-text
   - name: projects
     label: Projects
-    path: src/_data/content/projects
+    path: src/_data/posts/projects
     type: collection
     fields:
       - name: title
