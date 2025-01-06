@@ -13,14 +13,18 @@
     "url": "https://github.com/braican/braican.com/issues"
   },
   "scripts": {
-    "dev": "tinacms dev -c 'eleventy --serve'",
-    "build": "tinacms build && eleventy"
+    "dev": "@11ty/eleventy --serve",
+    "build": "@11ty/eleventy"
+  },
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "esbuild": "^0.19.11",
-    "eslint": "^8.56.0",
+    "@eslint/js": "^9.17.0",
+    "esbuild": "0.24.2",
+    "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
-    "prettier": "3.1.1"
+    "prettier": "3.4.2"
   }
 }
