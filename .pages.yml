@@ -7,4 +7,5 @@ content:
     fields:
       - name: title
         label: Title
+        type: string
 
