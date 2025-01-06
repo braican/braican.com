@@ -3,7 +3,8 @@ content:
   - name: homepage
     label: Homepage
     type: file
-    path: _data/content/home.md
+    format: json
+    path: _data/content/home.json
     fields:
       - name: intro
         label: Intro
