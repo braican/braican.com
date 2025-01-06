@@ -1,5 +1,13 @@
 media: _data/media
 content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: _data/content/home.md
+    fields:
+      - name: intro
+        label: Intro
+        type: rich-text
   - name: projects
     label: Projects
     path: _data/content/projects
