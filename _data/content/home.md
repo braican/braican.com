@@ -1,2 +1,14 @@
 ---
+intro: >-
+  I'm an experience-focused developer who works closely with companies and
+  individuals to build strategies and impactful digital products for their
+  brands.
+
+
+  Full time, I lead technology at [Upstatement](https://upstatement.com), a
+  digital product studio.
+
+
+  I've made beer that has been called "pretty average", and I have a tendency to
+  yell at Boston sports teams.
 ---
