@@ -1,0 +1,10 @@
+media: _data/media
+content:
+  - name: projects
+    label: Projects
+    path: _data/content/projects
+    type: collection
+    fields:
+      - name: title
+        label: Title
+
