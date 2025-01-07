@@ -1,0 +1,17 @@
+<div class="grid">
+  <ul class="col-span-3 col-start-2 project-list ul-null">
+    {%- for slug, project in projects -%}
+      <li class="project-item">
+        {% if project.url %}
+          <a href="{{ project.url }}" class="project-link">
+        {% endif %}
+          <h3 class="project-name">{{ project.title }}</h3>
+
+        {% if project.url %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4z"/></svg>
+          </a>
+        {% endif %}
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

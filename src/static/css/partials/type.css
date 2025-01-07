@@ -42,3 +42,8 @@ label {
 .text-content > * + * {
   margin-top: 0.75em;
 }
+
+.ul-null {
+  list-style: none;
+  padding: 0;
+}

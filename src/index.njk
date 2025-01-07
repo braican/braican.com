@@ -12,11 +12,13 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="mt-l">
-  <header>
-    <h2 class="sectionhead">Work</h2>
-  </header>
+{% if projects %}
+  <section class="mt-l">
+    <header>
+      <h2 class="sectionhead">Work</h2>
+    </header>
+    {% include "components/project-list.njk" %}
+  </section>
+{% endif %}
 
-  {{ projects | dump }}
-</section>
 

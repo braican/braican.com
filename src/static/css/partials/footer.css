@@ -5,8 +5,6 @@
 
 .social-list {
   display: flex;
-  list-style: none;
-  padding: 0;
   gap: 0.1em 1em;
   flex-wrap: wrap;
 }
