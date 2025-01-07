@@ -26,4 +26,8 @@ content:
       - name: title
         label: Title
         type: string
+      - name: url
+        label: URL
+        type: string
+        pattern: { message: 'This must be a valid URL (e.g. https://example.com).', regex: '^https?:\/\/' }
 
