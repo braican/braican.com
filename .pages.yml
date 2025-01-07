@@ -22,6 +22,7 @@ content:
     label: Projects
     path: src/_data/projects
     type: collection
+    format: json
     fields:
       - name: title
         label: Title

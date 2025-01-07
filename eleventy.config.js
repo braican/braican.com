@@ -13,6 +13,10 @@ export default async function (eleventyConfig) {
     return md.render(markdownString);
   });
 
+  eleventyConfig.addFilter('dump', (...args) => {
+    console.log(...args);
+  });
+
   eleventyConfig.addTemplateFormats('css');
   eleventyConfig.addExtension('css', {
     outputFileExtension: 'css',
