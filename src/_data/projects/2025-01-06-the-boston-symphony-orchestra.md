@@ -1,4 +1,0 @@
----
-title: The Boston Symphony Orchestra
-url: https://www.bso.org/
----

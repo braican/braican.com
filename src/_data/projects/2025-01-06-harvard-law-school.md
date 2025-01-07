@@ -1,4 +1,0 @@
----
-title: Harvard Law School
-url: https://hls.harvard.edu/
----
