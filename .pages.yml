@@ -22,7 +22,7 @@ content:
     label: Projects
     path: src/_data/projects
     type: collection
-    filename: "{fields.date}-{primary}.json"
+    filename: "{fields.date.format('yyyy-MM-dd')}-{primary}.json"
     fields:
       - name: title
         label: Title
