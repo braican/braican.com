@@ -18,9 +18,9 @@ content:
       - name: intro
         label: Intro
         type: rich-text
-  - name: projects
-    label: Projects
-    path: src/_data/projects
+  - name: articles
+    label: Artitcles
+    path: src/_data/articles
     type: collection
     format: json
     fields:
