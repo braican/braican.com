@@ -4,14 +4,14 @@ content:
     label: Homepage
     type: file
     format: json
-    path: src/_data/posts/home.json
+    path: src/index.json
     fields:
       - name: intro
         label: Intro
         type: rich-text
   - name: projects
     label: Projects
-    path: src/_data/posts/projects
+    path: src/_data/projects
     type: collection
     fields:
       - name: title

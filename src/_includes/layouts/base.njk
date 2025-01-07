@@ -28,14 +28,11 @@
 	</head>
 
 	<body>
-		<nav>
-			<h1 class="masthead">Nick Braica builds applications.</h1>
-		</nav>
+    <main>
+		  {{ content | safe }}
+    </main>
 
-		{{ content | safe }}
-
+    {% include "components/footer.njk" %}
 		<script async src="/build/app.js"></script>
-
 	</body>
-
 </html>

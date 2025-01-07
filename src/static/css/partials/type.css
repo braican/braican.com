@@ -2,14 +2,34 @@ html {
   line-height: 1.5;
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
+  font-size: var(--step--1);
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
-h1 {
+.masthead {
+  font-size: var(--step-6);
   font-weight: var(--heading-weight);
+  margin-bottom: var(--space-xl);
+}
+
+.text-content > p {
+  font-size: var(--step-2);
+}
+
+.text-content > p a:hover {
+  color: var(--accent-color);
+}
+
+.text-content > * + * {
+  margin-top: 0.75em;
 }

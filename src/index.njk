@@ -2,6 +2,13 @@
 layout: layouts/base.njk
 ---
 
-<div>
- {{ posts.home.intro | md | safe }}
+<header class="grid dot">
+  <h1 class="masthead col-span-3">Nick Braica builds digital products.</h1>
+</header>
+
+<div class="grid">
+  <div class="col-span-3 col-start-2 text-content">
+    {{ intro | md | safe }}
+  </div>
 </div>
+

@@ -2,3 +2,6 @@
 @import 'partials/reset.css';
 @import 'partials/type.css';
 @import 'partials/base.css';
+@import 'partials/layout.css';
+@import 'partials/elements.css';
+@import 'partials/footer.css';
