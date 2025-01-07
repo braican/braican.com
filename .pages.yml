@@ -18,17 +18,5 @@ content:
       - name: intro
         label: Intro
         type: rich-text
-  - name: projects
-    label: Projects
-    path: src/_data/projects
-    type: collection
-    format: json
-    fields:
-      - name: title
-        label: Title
-        type: string
-      - name: url
-        label: URL
-        type: string
-        pattern: { message: 'This must be a valid URL (e.g. https://example.com).', regex: '^https?:\/\/' }
+
 
