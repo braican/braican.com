@@ -1,5 +1,0 @@
-# Ignore composer since we have private keys in there for premium plugins.
-
-composer.json
-composer.lock
-vendor/

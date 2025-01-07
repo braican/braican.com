@@ -1,20 +1,26 @@
 # braican.com
 
-This is the public repository of [braican.com](http://braican.com), [Nick Braica's](http://twitter.com/braican) portfolio site. This repo includes both the `frontend` and the `api` end, which is set up with WordPress.
+This is the public repository of [braican.com](https://braican.com), the portfolio website for Nick Braica.
 
 ## Setup and development
 
-To set up a local environment complete with a WordPress instance and the Gatsby frontend, you should run the following:
+To set the site up locally, you'll need node, along with some dependencies.The easiest way to ensure you're using the right version of node is to use [Node Version Manager](https://github.com/nvm-sh/nvm).
 
-```
-# Make sure you're using the right node version.
+### Installation
+
+```shell
+# Assuming you have nvm...
 nvm install
 
-# Install the docker container for wordpress and node dependencies.
-./bin/install
+# Intall dependencies.
+npm install
+```
 
-# Start all the things.
-./bin/start
+### Development
+
+```shell
+# Start the dev server.
+npm run dev
 ```
 
 ## The Versions

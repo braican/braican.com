@@ -1,0 +1,31 @@
+.project-item {
+  border-top: 1px solid var(--light-gray);
+}
+
+.project-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-m);
+  padding: var(--space-s) 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link svg {
+  display: block;
+  width: max(4%, 32px);
+}
+
+.project-link:hover {
+  color: var(--accent-color);
+}
+.project-link:hover svg {
+  transform: translate3d(2px, -2px, 0);
+}
+
+.project-name {
+  font-size: var(--step-2);
+  font-weight: var(--bold-weight);
+  flex: 1;
+}

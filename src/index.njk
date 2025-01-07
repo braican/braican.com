@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+
+<header class="grid dot">
+  <h1 class="masthead col-span-3">Nick Braica builds digital products.</h1>
+</header>
+
+<section class="grid">
+  <div class="col-span-3 col-start-2 text-content large-text">
+    {{ intro | md | safe }}
+  </div>
+</section>
+
+{% if projects %}
+  <section class="mt-l">
+    <header>
+      <h2 class="sectionhead underlined">Work</h2>
+    </header>
+    {% include "components/project-list.njk" %}
+  </section>
+{% endif %}
+
+
