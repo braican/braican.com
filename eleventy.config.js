@@ -29,6 +29,7 @@ export default async function (eleventyConfig) {
         minify: env === 'production',
         sourcemap: env !== 'production',
         outfile: './_site/build/app.css',
+        target: ['es2020'],
       });
     },
   });
