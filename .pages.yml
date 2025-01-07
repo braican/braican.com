@@ -1,0 +1,39 @@
+media: src/_data/media
+content:
+  - name: settings
+    label: Site Settings
+    type: file
+    format: json
+    path: src/_data/settings.json
+    fields:
+      - name: colophon
+        label: Colophon
+        type: rich-text
+  - name: homepage
+    label: Homepage
+    type: file
+    format: json
+    path: src/index.json
+    fields:
+      - name: intro
+        label: Intro
+        type: rich-text
+  - name: projects
+    label: Projects
+    path: src/_data/projects
+    type: collection
+    filename: "{fields.date.format('yyyy-MM-dd')}-{primary}.json"
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: url
+        label: URL
+        type: string
+        pattern: {message: 'This must be a valid URL (e.g. https://example.com).', regex: '^(https?:\/\/)|$'}
+      - name: date
+        label: Date
+        description: A general time when this project was worked on. This will determine sort order.
+        type: date
+        options:
+          format: yyyy-MM-dd

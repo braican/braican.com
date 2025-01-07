@@ -1,0 +1,16 @@
+.dot {
+  position: relative;
+}
+.dot::after {
+  content: '';
+  width: var(--step-4);
+  height: var(--step-4);
+  display: block;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: translate3d(-40%, -40%, 0);
+}
