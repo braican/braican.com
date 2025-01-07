@@ -1,5 +1,9 @@
 <footer class="footer grid">
-  <div class="col-span-3 col-start-2">
-    &copy;
+  <div class="col-span-3 col-start-2 footer-content">
+    <p>&copy; {{ helpers.currentYear }} Nick Braica</p>
+
+    {% if settings.colophon %}
+      {{ settings.colophon | md | safe }}
+    {% endif %}
   </div>
 </footer>

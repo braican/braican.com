@@ -1,5 +1,14 @@
 media: src/_data/media
 content:
+  - name: settings
+    label: Site Settings
+    type: file
+    format: json
+    path: src/_data/settings.json
+    fields:
+      - name: colophon
+        label: Colophon
+        type: rich-text
   - name: homepage
     label: Homepage
     type: file
