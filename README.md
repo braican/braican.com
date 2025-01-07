@@ -4,7 +4,7 @@ This is the public repository of [braican.com](https://braican.com), the portfol
 
 ## Setup and development
 
-To set the site up locally, you'll need node, along with some dependencies.The easiest way to ensure you're using the right version of node is to use [Node Version Manager](https://github.com/nvm-sh/nvm).
+This site requires Node.js. The easiest way to ensure you're using the right version of node is to use [Node Version Manager](https://github.com/nvm-sh/nvm). From there, all that's left to do is install the dependencies via `npm` and start the local development server.
 
 ### Installation
 
@@ -20,7 +20,14 @@ npm install
 
 ```shell
 # Start the dev server.
-npm run dev
+npm start
+```
+
+### Building for production
+
+```shell
+# Build the static site and assets.
+npm run build
 ```
 
 ## The Versions
