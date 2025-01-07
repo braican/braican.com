@@ -18,11 +18,11 @@ content:
       - name: intro
         label: Intro
         type: rich-text
-  - name: players
-    label: Players
-    path: src/_data/players
+  - name: projects
+    label: Projects
+    path: src/_data/projects
     type: collection
-    format: json
+    filename: "{primary}.json"
     fields:
       - name: title
         label: Title
