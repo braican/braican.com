@@ -22,7 +22,7 @@ content:
     label: Projects
     path: src/_data/projects
     type: collection
-    filename: "{primary}.json"
+    filename: "{field.date}-{primary}.json"
     fields:
       - name: title
         label: Title
@@ -31,3 +31,9 @@ content:
         label: URL
         type: string
         pattern: {message: 'This must be a valid URL (e.g. https://example.com).', regex: '^(https?:\/\/|)$'}
+      - name: date
+        label: Date
+        description: A general time when this project was worked on. This will determine sort order.
+        type: date
+        options:
+          format: dd-MM-yyyy
