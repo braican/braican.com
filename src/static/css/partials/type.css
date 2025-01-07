@@ -22,18 +22,20 @@ label {
   margin-bottom: var(--space-m);
 }
 
+.sectionhead {
+  font-size: var(--step-4);
+  font-weight: var(--heading-weight);
+  margin-bottom: var(--space-m);
+}
+
 @media screen and (min-width: 600px) {
-  .text-content > p {
+  .large-text {
     font-size: var(--step-2);
   }
 }
 
-.footer-content > p {
-  font-size: var(--step--2);
-}
-
 .text-content > p a:hover,
-.footer-content > p a:hover {
+.text-content > ul a:hover {
   color: var(--accent-color);
 }
 

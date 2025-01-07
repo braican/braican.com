@@ -1,6 +1,35 @@
-<footer class="footer grid">
-  <div class="col-span-3 col-start-2 footer-content">
+<footer class="footer mt-l grid">
+  <div class="col-span-3 col-start-2 footer-content text-content">
     <p>&copy; {{ helpers.currentYear }} Nick Braica</p>
+
+    <ul class="social-list">
+      <li>
+        <a href="https://github.com/braican" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/nicholasbraica/"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/braican/" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://untappd.com/user/braican" target="_blank" rel="noopener noreferrer">
+          Untappd
+        </a>
+      </li>
+      <li>
+        <a href="mailto:nick@braican.com">nick@braican.com</a>
+      </li>
+    </ul>
 
     {% if settings.colophon %}
       {{ settings.colophon | md | safe }}
