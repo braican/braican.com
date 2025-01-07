@@ -16,6 +16,12 @@ label {
   line-height: 1.1;
 }
 
+.underlined {
+  display: inline-block;
+  padding-top: var(--space-s);
+  border-top: 2px solid var(--accent-color);
+}
+
 .masthead {
   font-size: var(--step-5);
   font-weight: var(--heading-weight);

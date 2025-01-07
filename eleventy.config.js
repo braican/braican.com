@@ -17,6 +17,8 @@ export default async function (eleventyConfig) {
     console.log(...args);
   });
 
+  eleventyConfig.addFilter('toArray', object => Object.keys(object).map(k => object[k]));
+
   eleventyConfig.addTemplateFormats('css');
   eleventyConfig.addExtension('css', {
     outputFileExtension: 'css',

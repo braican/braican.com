@@ -1,6 +1,6 @@
 <div class="grid">
   <ul class="col-span-3 col-start-2 project-list ul-null">
-    {%- for slug, project in projects -%}
+    {%- for project in projects | toArray | reverse -%}
       <li class="project-item">
         {% if project.url %}
           <a href="{{ project.url }}" class="project-link">
