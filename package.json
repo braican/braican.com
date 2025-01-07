@@ -14,7 +14,9 @@
   },
   "scripts": {
     "start": "ENVIRONMENT=development eleventy --serve",
-    "build": "ENVIRONMENT=production eleventy"
+    "build": "ENVIRONMENT=production eleventy",
+    "prepare": "husky install",
+    "lint:js": "eslint './src/**/*.js' eleventy.config.js"
   },
   "type": "module",
   "dependencies": {
@@ -25,6 +27,7 @@
     "esbuild": "0.24.2",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
     "prettier": "3.4.2"
   }

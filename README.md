@@ -4,7 +4,7 @@ This is the public repository of [braican.com](https://braican.com), the portfol
 
 ## Setup and development
 
-To set the site up locally, you'll need node, along with some dependencies.The easiest way to ensure you're using the right version of node is to use [Node Version Manager](https://github.com/nvm-sh/nvm).
+This site requires Node.js. The easiest way to ensure you're using the right version of node is to use [Node Version Manager](https://github.com/nvm-sh/nvm). From there, all that's left to do is install the dependencies via `npm` and start the local development server.
 
 ### Installation
 
@@ -20,10 +20,25 @@ npm install
 
 ```shell
 # Start the dev server.
-npm run dev
+npm start
+```
+
+### Building for production
+
+```shell
+# Build the static site and assets.
+npm run build
 ```
 
 ## The Versions
+
+### v8
+
+Release 01/07/2025
+
+![v8](assets/braican.com-v8.png?raw=true)
+
+The eighth version of the site sees more simplification. I've ditched the overhead of WordPress for [Pages CMS](https://pagescms.org/) and built the site itself using [11ty](https://www.11ty.dev/). The build process has also been simplified, as 11ty handles the bundling and compilation of all static assets like css and JavaScript (although there is no JavaScript loaded on the site as of 8.0.0 other than Google Analytics). This is in contrast to the fairly involved Webpack configuration of previous iterations. From a design perspective, not much changes - it remains a simple text-centric site with an intro and a list of projects (for now). [Chivo](https://fonts.google.com/specimen/Chivo) is the font used on the site, served from Google Fonts. I have grand ideas of further highlighting case studies and including shorter-form articles, but we'll see where that ever goes.
 
 ### v7
 
@@ -31,7 +46,7 @@ Released 08/18/2019
 
 ![v7](assets/braican.com-v7.png?raw=true)
 
-Version seven moves the tech stack to using Gatsby to generate the static, single page site. The design moves to a more text-centric approach; no more corny images for projects, for example.
+Version seven moves the tech stack to using Gatsby to generate the static, single page site. The design moves to a more text-centric approach; no more corny images for projects, for example. It continues to use WordPress to manage and serve content to the application.
 
 ### v6
 
