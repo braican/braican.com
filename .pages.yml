@@ -30,7 +30,7 @@ content:
       - name: url
         label: URL
         type: string
-        pattern: {message: 'This must be a valid URL (e.g. https://example.com).', regex: '^(https?:\/\/|)$'}
+        pattern: {message: 'This must be a valid URL (e.g. https://example.com).', regex: '^(https?:\/\/)|$'}
       - name: date
         label: Date
         description: A general time when this project was worked on. This will determine sort order.
