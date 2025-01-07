@@ -36,4 +36,4 @@ content:
         description: A general time when this project was worked on. This will determine sort order.
         type: date
         options:
-          format: dd-MM-yyyy
+          format: yyyy-MM-dd
