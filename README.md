@@ -34,7 +34,7 @@ npm run build
 
 ### v8
 
-Release 01/07/2025
+Released 01/07/2025
 
 ![v8](assets/braican.com-v8.png?raw=true)
 
