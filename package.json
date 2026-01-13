@@ -20,7 +20,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
